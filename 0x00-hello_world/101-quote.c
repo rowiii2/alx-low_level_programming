@@ -3,16 +3,13 @@
 /**
  * main - Entry point
  *
- * Description: print a qoute using put function
- *	ssize_t fputs(int fd, const void *buf, size_t count)
- *
- * Return: 1 (error).
+ * Return: Always  0 (Success).
 */
 
 int main(void)
 {
-	char quo[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	fputs("and that piece of art is useful\" - Dora Korpar, 2015-10-19, stdout";
 
-	write(1, quo, 59);
+	fputs("\n", stdout);
 	return (1);
 }
