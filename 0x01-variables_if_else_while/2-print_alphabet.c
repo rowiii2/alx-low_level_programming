@@ -1,23 +1,34 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Description: print all alphabet letters
+ * main - Prints numbers between 00 to 99.
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch = 'a';
+	int i, e;
 
-	while (ch <= '2')
+	i = 48;
+	e = 48;
+
+	while (e < 58)
 	{
-		putchar(ch);
-		ch++;
+		i = 48;
+		while (i < 58)
+		{
+			putchar(e);
+			putchar(i);
+			if (i == 57 && e == 57)
+			{
+				break;
+			}
+			putchar(',');
+			putchar(' ');
+			i++;
+		}
+		e++;
 	}
-	putchar('\n')
-
+	putchar('\n');
 	return (0);
 }
-
